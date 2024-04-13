@@ -69,7 +69,7 @@ class Vampire {
         return vampFound;
       }
     }
-    
+  
     return null;
   }
 
@@ -82,9 +82,7 @@ class Vampire {
       //add 1 to the total for this specific offspring and then add total descendants of this offspring
       totalVamps += 1 + descendent.totalDescendents;
     }  
-
     return totalVamps;
-
   }
 
   // Returns an array of all the vampires that were converted after 1980
@@ -100,7 +98,6 @@ class Vampire {
       const offspringMillennials = offspring.allMillennialVampires;
       millennials = millennials.concat(offspringMillennials);
     }
-
     return millennials;
   }
 }
